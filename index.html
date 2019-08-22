@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Microverse Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <h1 id="title">Title</h1>
-    <p id="description"></p>
+    <p id="description"> Description</p>
+
     <form action="" id="survey-form">
-	<label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Your name here">
+
+	<label for="name" id="name-label" >Name</label>
+        <input type="text" id="name" placeholder="Your name here" required>
+
 	<label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Your email here">
-	<label for="number" id="number-label">Number</label>
+        <input type="email" id="email" placeholder="Your email here" required>
+    
+        <label for="number" id="number-label">Number</label>
         <input type="number" id="number" min="1" max="10" placeholder="The number here">
 	<select id="dropdown">
 	  <option value="optn1">Option 1</option>
 	  <option value="optn2">Option 2</option>
 	  <option value="optn3">Option 3</option>
-	</select>
+    </select>
+    
 	<label for="radio-1">Radio 1</label>
 	<input type="radio" name="group1" id="radio-1" value="radio-value-1">
 	<label for="radio-2">Radio 2</label>
@@ -34,7 +41,8 @@
 	<label for="check-3">Check 3</label>
 	<input type="checkbox" name="group2" id="check-3" value="check-value-3">
 	<textarea></textarea>
-	<input type="submit" value="Submit">
+	<input type="submit" id='submit' value="Submit">
     </form>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </body>
 </html>
