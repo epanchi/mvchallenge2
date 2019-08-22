@@ -10,42 +10,48 @@
 <body>
 
     <h1 id="title">Title</h1>
-    <p id="description"></p>
+    <p id="description">Description</p>
     <form action="#" id="survey-form">
-	<label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Your name here">
-    <p id="description"> Description</p>
-
-    <form action="" id="survey-form">
-
-	<label for="name" id="name-label" >Name</label>
-        <input type="text" id="name" placeholder="Your name here" required>
-
-	<label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Your email here" required>
-    
-        <label for="number" id="number-label">Number</label>
-        <input type="number" id="number" min="1" max="10" placeholder="The number here">
+	<div class="field">
+	    <label for="name" id="name-label">Name</label>
+	    <input type="text" id="name" placeholder="Your name here">
+	</div>
+	<div class="field">
+	    <label for="email" id="email-label">Email</label>
+	    <input type="email" id="email" placeholder="Your email here" required>
+	</div>
+	<div class="field">
+	    <label for="number" id="number-label">Number</label>
+	    <input type="number" id="number" min="1" max="10" placeholder="The number here">
+	</div>
 	<select id="dropdown">
-	  <option value="optn1">Option 1</option>
-	  <option value="optn2">Option 2</option>
-	  <option value="optn3">Option 3</option>
-    </select>
-    
-	<label for="radio-1">Radio 1</label>
-	<input type="radio" name="group1" id="radio-1" value="radio-value-1">
-	<label for="radio-2">Radio 2</label>
-	<input type="radio" name="group1" id="radio-2" value="radio-value-2">
-	<label for="radio-3">Radio 3</label>
-	<input type="radio" name="group1" id="radio-3" value="radio-value-3">
-	<label for="check-1">Check 1</label>
-	<input type="checkbox" name="group2" id="check-1" value="check-value-1">
-	<label for="check-2">Check 2</label>
-	<input type="checkbox" name="group2" id="check-2" value="check-value-2">
-	<label for="check-3">Check 3</label>
-	<input type="checkbox" name="group2" id="check-3" value="check-value-3">
-	<textarea></textarea>
-	<input type="submit" id='submit' value="Submit">
+	    <option value="optn1">Option 1</option>
+	    <option value="optn2">Option 2</option>
+	    <option value="optn3">Option 3</option>
+	</select>
+	<div class="field" id="radios">
+	    <label for="radio-1">Radio 1</label>
+	    <input type="radio" name="group1" id="radio-1" value="radio-value-1">
+	    <label for="radio-2">Radio 2</label>
+	    <input type="radio" name="group1" id="radio-2" value="radio-value-2">
+	    <label for="radio-3">Radio 3</label>
+	    <input type="radio" name="group1" id="radio-3" value="radio-value-3">
+	</div>
+	<div class="field" id="checkboxes">
+	    <label for="check-1">Check 1</label>
+	    <input type="checkbox" name="group2" id="check-1" value="check-value-1">
+	    <label for="check-2">Check 2</label>
+	    <input type="checkbox" name="group2" id="check-2" value="check-value-2">
+	    <label for="check-3">Check 3</label>
+	    <input type="checkbox" name="group2" id="check-3" value="check-value-3">
+	</div>
+	<div class="field" id="comments-container">
+	    <label for="comments">Additional comments</label>
+	    <textarea id="comments"></textarea>
+	</div>
+	<div class="field">
+	    <input type="submit" id='submit' value="Submit">
+	</div>
     </form>
     <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </body>

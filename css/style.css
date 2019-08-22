@@ -3,6 +3,25 @@
     text-align: center;
 }
 
-#surver-form{
-    
+form#survey-form div.field {
+    display: flex;
+}
+input[type="text"] {
+    flex-grow: 1;
+}
+label {
+    flex-grow: 0.05;
+}
+div.field {
+    margin: 40px 0;
+}
+label[for="comments"] {
+    display: block;
+}
+div#comments-container {
+    flex-direction: column;
+}
+label[for="comments"], textarea#comments {
+    display: block;
+    width: 100%;
 }
