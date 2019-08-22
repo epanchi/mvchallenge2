@@ -42,7 +42,6 @@ label[for="comments"], textarea#comments {
 input[type=text],
 input[type=number],
 input[type=email],
-select,
 textarea   {
     width: 100%;
     padding: 12px 20px;
@@ -51,6 +50,7 @@ textarea   {
   }
 
 select{
+    width: 100%;
     height: 40px;
 }  
 
@@ -65,10 +65,25 @@ input[type=submit]{
   }
 
 #radios{
-    width: 50%;
     float:left;
 }
 #checkboxes{
-    width: 50%;
     float: right;
+}
+#radios, #checkboxes {
+    padding: 20px 0;
+    width: 50%;
+}
+#radios-checks::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+#radios-checks {
+    width: 80%;
+    margin: 0 auto;
+}
+h3 {
+    margin: 0;
+    padding: 0;
 }
