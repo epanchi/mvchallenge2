@@ -4,7 +4,7 @@
 }
 
 form#survey-form div.field {
-    display: flex;
+  /*  display: flex; */
 }
 input[type="text"] {
     flex-grow: 1;
@@ -13,7 +13,7 @@ label {
     flex-grow: 0.05;
 }
 div.field {
-    margin: 40px 0;
+    margin: 20px 0 0 0;
 }
 label[for="comments"] {
     display: block;
@@ -24,4 +24,51 @@ div#comments-container {
 label[for="comments"], textarea#comments {
     display: block;
     width: 100%;
+}
+
+#content{
+    padding:0 5em;
+    
+}
+#survey-form {
+    max-width: 600px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+select,
+textarea   {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+select{
+    height: 40px;
+}  
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#radios{
+    width: 50%;
+    float:left;
+}
+#checkboxes{
+    width: 50%;
+    float: right;
 }
