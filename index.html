@@ -10,9 +10,31 @@
     <h1 id="title">Title</h1>
     <p id="description"></p>
     <form action="" id="survey-form">
-        <input type="text" id="name">
-        <input type="email" id="email">
-        <input type="number" id="number">
+	<label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Your name here">
+	<label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Your email here">
+	<label for="number" id="number-label">Number</label>
+        <input type="number" id="number" min="1" max="10" placeholder="The number here">
+	<select id="dropdown">
+	  <option value="optn1">Option 1</option>
+	  <option value="optn2">Option 2</option>
+	  <option value="optn3">Option 3</option>
+	</select>
+	<label for="radio-1">Radio 1</label>
+	<input type="radio" name="group1" id="radio-1" value="radio-value-1">
+	<label for="radio-2">Radio 2</label>
+	<input type="radio" name="group1" id="radio-2" value="radio-value-2">
+	<label for="radio-3">Radio 3</label>
+	<input type="radio" name="group1" id="radio-3" value="radio-value-3">
+	<label for="check-1">Check 1</label>
+	<input type="checkbox" name="group2" id="check-1" value="check-value-1">
+	<label for="check-2">Check 2</label>
+	<input type="checkbox" name="group2" id="check-2" value="check-value-2">
+	<label for="check-3">Check 3</label>
+	<input type="checkbox" name="group2" id="check-3" value="check-value-3">
+	<textarea></textarea>
+	<input type="submit" value="Submit">
     </form>
 </body>
 </html>
